@@ -1,6 +1,8 @@
 
 Resume Generator Web Application
+
 Overview
+
 This web application allows users to create a professional resume by providing essential information through a user-friendly form. The application is built using JavaScript (Js) to ensure a dynamic and interactive user experience.
 
 Features
