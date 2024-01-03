@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Boostrap styles  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+  <title>Cv Generator</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Jeison's CV Generator</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+        <!-- Aqui crearemos el formulario -->
+  <div class="container my-3 ">
+    <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 well">
+            <h2>Cv Generator</h2>
+           <form class="form-control">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre" >
+              </div>
+              <div class="mb-3">
+                <label for="direccion" class="form-label">Direccion:</label>
+                <input type="text" class="form-control" id="direccion" placeholder="direccion" >
+              </div>
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo:</label>
+                <input type="email" class="form-control" id="correo" placeholder="@">
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Telefono:</label>
+              <input type="number" class="form-control" id="telefono" placeholder="809-236-2155">
+          </div>
+          <div class="mb-3">
+            <label for="Website" class="form-label">Website</label>
+            <input type="url" class="form-control" id="website">
+        </div>      
+           <div class="mb-3">
+          <label for="resumen" class="form-label">Resumen:</label>
+          <input type="text" class="form-control" id="resumen">
+      </div>
+        <div class="mb-3">
+          <label for="idioma" class="form-label">Idiomas:</label>
+          <input type="text" class="form-control" id="idioma">
+      </div>
+      <div class="mb-3">
+        <label for="empleo" class="form-label">Empleos:</label>
+        <input type="text" class="form-control" id="empleo">
+    </div>
+    <div class="mb-3">
+      <label for="educacion" class="form-label">Educacion:</label>
+      <input type="text" class="form-control" id="educacion">
+  </div>
+  <div class="mb-3">
+    <label for="skill" class="form-label">Skill:</label>
+    <input type="text" class="form-control" id="skill">
+</div>
+<div class="mb-3">
+  <label for="certificaciones" class="form-label">Certificaciones:</label>
+  <input type="text" class="form-control" id="certificaciones">
+</div>
+  
+           
+                <button type="button" id="guardar" class="btn btn-success guardar">Guardar</button>
+                <button type="button" class="btn btn-danger limpiar">Limpiar</button>
+         
+       </form>
+  </div>
+      </div>
+          </div>
+            <!-- Desplegando CV -->
+
+        <div class="container2">
+          <div class="main-body">
+          
+                <!-- Breadcrumb -->
+                
+                   
+               
+                <!-- /Breadcrumb -->
+          
+                <div class="row gutters-sm fila">
+                  <!-- <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                          <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                          <div class="mt-3">
+                            <h4>John Doe</h4>
+                            <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mt-3">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0">Website</h6>
+                          <span class="text-secondary">https://bootdey.com</span>
+                        </li>
+            
+                      </ul>
+                    </div>
+
+                    <div class="card mt-3">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0">Empleos: </h6>
+                          <ul>
+                            <li>Programador</li>
+                          </ul>
+                        </li>
+            
+                      </ul>
+                    </div>
+                    
+                    <div class="card mt-3">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0">Educacion:</h6>
+                          <ol class="I">
+                            <li>juan bosch 2020</li>
+                          </ol>
+                        </li>
+            
+                      </ul>
+                    </div>
+
+                    <div class="card mt-3">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0">Certificaciones: </h6>
+                          <ul>
+                            <li>AWS</li>
+                          </ul>
+                        </li>
+            
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8">
+                    <div class="card mb-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Nombre: </h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                          jeison infante 
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Correo:</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            fip@jukmuh.al
+                          </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Telefono:</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            (239) 816-9029
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Resumen:</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            (320) 380-4539
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Address:</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            Bay Area, San Francisco, CA
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <a class="btn btn-danger"> Delete </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="row gutters-sm">
+                      <div class="col-sm-6 mb-3">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Skills: </i></h6>
+                            <li>
+                            Javascript
+                            </li>
+      
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-6 mb-3">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Idiomas:</i></h6>
+                            <li>
+                              Ingles
+                              </li>
+        
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+      
+                  </div> -->
+                </div>
+      
+              </div>
+          </div>
+
+
+     
+
+
+<!-- including boostrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>

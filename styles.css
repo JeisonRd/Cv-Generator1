@@ -1,0 +1,32 @@
+
+.row {
+    display: flex;
+ justify-content: center;
+
+}
+
+.wrong {
+
+    border-color: red;
+    border-width: medium;
+
+
+}
+
+.input-success {
+
+    border-color: green;
+    border-width: medium;
+};
+
+.main-container{
+
+
+    margin-bottom: 10px;
+}
+
+.container2{
+
+    margin-left: 30px;
+    margin-right: 30px;
+}
